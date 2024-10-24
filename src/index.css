@@ -1,0 +1,20 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+/* @media (min-width: 767px) {
+    
+    body, html {
+        overflow: hidden;
+    }
+
+} */
