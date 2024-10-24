@@ -62,7 +62,7 @@ export default function Home() {
 
     return (  
         < >
-            <div className="bg-gradient-to-b overflow-hidden from-[#1f3756] to-[#141539] w-full  py-8 pb-28 px-4 flex flex-col md:pb-[4.12rem]">
+            <div className="bg-gradient-to-b overflow-hidden from-[#1f3756] to-[#141539] w-full h-screen py-8 pb-[8.16rem] px-4 flex flex-col md:pb-[4.1rem]">
                 <div className="flex items-center justify-between p-3 py-4 rounded-lg score">
                     <div className='p-4 pl-1'> <img className='w-[120px]' src={logo} alt="logo" /> </div>
                     <div className='number text-[10px] flex flex-col justify-center items-center bg-[#f3fcff] h-fit px-7 py-4 rounded-lg font-extrabold'>SCORE <span className='text-[#575468] text-[2.3rem]'>{score}</span></div>
@@ -119,11 +119,11 @@ export default function Home() {
                         <button onClick={reset} className={`mt-7 bg-[#E6E6E6] text-[#575468] font-bold text-sm py-2 px-8 rounded-lg`}>Play Again</button>
                     </div>
                     
-                <div className="mt-16 text-center rules md:text-right md:mt-[0rem] mb-20">
+                <div className="mt-16 text-center rules md:text-right md:mt-[0rem]">
                     <button onClick={() => setRule(true)} className=' rulesButton transition-all duration-500 rounded-lg px-9 py-2 text-[#E6E6E6] uppercase font-bold hover:bg-[#E6E6E6] hover:text-[#3b4363]'>Rules</button>
                 </div>
 
-                <div className={`absolute z-20 top-0 left-0 w-full h-[115vh] md:h-screen transition-all duration-100 ${rule? 'visible': 'invisible'} rulesContainer`}>
+                <div className={`absolute z-20 top-0 left-0 w-full transition-all duration-100 h-[100vh]  ${rule? 'visible': 'invisible'} rulesContainer`}>
                     <div className={`absolute flex flex-col min-w-[280px] transition-all duration-500 justify-center p-8 -translate-x-1/2 -translate-y-1/2 bg-white rulesImg top-1/2 left-1/2 ${rule? 'scale-100': 'scale-0'} `}>
                         <div className='flex justify-between'>
                             <h1 className='text-2xl text-[#575468] font-bold'>RULES</h1>
