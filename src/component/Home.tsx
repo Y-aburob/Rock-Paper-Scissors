@@ -62,7 +62,7 @@ export default function Home() {
 
     return (  
         < >
-            <div className="bg-gradient-to-b from-[#1f3756] to-[#141539] w-full h-screen py-8 pb-[8.16rem] px-4 flex flex-col md:pb-[4.1rem]">
+            <div className="bg-gradient-to-b overflow-hidden from-[#1f3756] to-[#141539] w-full h-screen py-8 pb-[8.16rem] px-4 flex flex-col md:pb-[4.1rem]">
                 <div className="flex items-center justify-between p-3 py-4 rounded-lg score">
                     <div className='p-4 pl-1'> <img className='w-[120px]' src={logo} alt="logo" /> </div>
                     <div className='number text-[10px] flex flex-col justify-center items-center bg-[#f3fcff] h-fit px-7 py-4 rounded-lg font-extrabold'>SCORE <span className='text-[#575468] text-[2.3rem]'>{score}</span></div>
