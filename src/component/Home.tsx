@@ -119,7 +119,7 @@ export default function Home() {
                         <button onClick={reset} className={`mt-7 bg-[#E6E6E6] text-[#575468] font-bold text-sm py-2 px-8 rounded-lg`}>Play Again</button>
                     </div>
                     
-                <div className="mt-16 text-center rules md:text-right md:mt-[0rem]">
+                <div className="mt-12 text-center rules md:text-right md:mt-[0rem]">
                     <button onClick={() => setRule(true)} className=' rulesButton transition-all duration-500 rounded-lg px-9 py-2 text-[#E6E6E6] uppercase font-bold hover:bg-[#E6E6E6] hover:text-[#3b4363]'>Rules</button>
                 </div>
 
