@@ -123,7 +123,7 @@ export default function Home() {
                     <button onClick={() => setRule(true)} className=' rulesButton transition-all duration-500 rounded-lg px-9 py-2 text-[#E6E6E6] uppercase font-bold hover:bg-[#E6E6E6] hover:text-[#3b4363]'>Rules</button>
                 </div>
 
-                <div className={`absolute z-20 top-0 left-0 w-full transition-all duration-100 h-[100vh]  ${rule? 'visible': 'invisible'} rulesContainer`}>
+                <div className={`absolute z-20 top-0 left-0 w-full transition-all duration-100 h-screen  ${rule? 'visible': 'invisible'} rulesContainer`}>
                     <div className={`absolute flex flex-col min-w-[280px] transition-all duration-500 justify-center p-8 -translate-x-1/2 -translate-y-1/2 bg-white rulesImg top-1/2 left-1/2 ${rule? 'scale-100': 'scale-0'} `}>
                         <div className='flex justify-between'>
                             <h1 className='text-2xl text-[#575468] font-bold'>RULES</h1>
