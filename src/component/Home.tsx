@@ -62,7 +62,7 @@ export default function Home() {
 
     return (  
         < >
-            <div className="bg-gradient-to-b from-[#1f3756] to-[#141539] w-full py-8 px-4 flex flex-col md:pb-[4.1rem]">
+            <div className="bg-gradient-to-b from-[#1f3756] h-screen to-[#141539] w-full py-8 px-4 flex flex-col md:pb-[4.1rem]">
                 <div className="flex items-center justify-between p-3 py-4 rounded-lg score">
                     <div className='p-4 pl-1'> <img className='w-[120px]' src={logo} alt="logo" /> </div>
                     <div className='number text-[10px] flex flex-col justify-center items-center bg-[#f3fcff] h-fit px-7 py-4 rounded-lg font-extrabold'>SCORE <span className='text-[#575468] text-[2.3rem]'>{score}</span></div>
@@ -94,7 +94,7 @@ export default function Home() {
                             
                             
                             <div>
-                                <div id='empty'  className={` empty transition-all duration-500 absolute top-0 left-1 rounded-full w-[120px] h-[120px] flex justify-center items-center ${computerPicked === false && startGame === true? 'delay-1000 scale-100': 'scale-0 none'}`}></div>
+                                <div id='empty' className={` empty transition-all duration-500 absolute top-0 left-1 rounded-full w-[120px] h-[120px] flex justify-center items-center ${computerPicked === false && startGame === true? 'delay-1000 scale-100': 'scale-0 none'}`}></div>
                                 <h1 className={`text-center absolute bottom-0 left-2 text-white transition-all duration-1000 w-fit ${computerPicked === false && startGame === true? 'delay-1000 translate-y-[160px] opacity-100': 'translate-y-[240px]  opacity-0'}`}>House picking...</h1>
                                 <h1 className={`text-center absolute bottom-0 left-2 text-white transition-all duration-1000 w-fit ${computerPicked === true? 'delay-1000 translate-y-[160px] opacity-100': 'translate-y-[240px]  opacity-0'}`}>House picked!</h1>
                             </div>
@@ -119,7 +119,7 @@ export default function Home() {
                         <button onClick={reset} className={`mt-7 bg-[#E6E6E6] text-[#575468] font-bold text-sm py-2 px-8 rounded-lg`}>Play Again</button>
                     </div>
                     
-                <div className="mt-12 text-center rules md:text-right md:mt-[0rem]">
+                <div className="mt-12 text-center rules md:text-right pb-[2rem] md:mt-[0rem]">
                     <button onClick={() => setRule(true)} className=' rulesButton transition-all duration-500 rounded-lg px-9 py-2 text-[#E6E6E6] uppercase font-bold hover:bg-[#E6E6E6] hover:text-[#3b4363]'>Rules</button>
                 </div>
 
